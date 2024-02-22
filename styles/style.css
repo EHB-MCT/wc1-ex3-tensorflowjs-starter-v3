@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.logo, .form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img.center {
+    max-width: 100%;
+    height: auto;
+}
+
+.form input, .form button { /* Updated selector to style button similarly */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 80%;
+    cursor: pointer; /* Makes it clear the button is clickable */
+}
+
+#price h2 {
+    color: #333;
+}

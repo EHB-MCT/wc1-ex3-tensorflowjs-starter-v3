@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI - ImmoNet</title>
+  <!-- Import TensorFlow.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!-- Import tfjs-vis -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+    <script src="./js/script.js" type="module" defer></script>
+<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="./assets/immonet.png" alt="Logo" class="center">
+    </div>
+    <div class="form">
+        <input type="number" id="airconditioning" placeholder="Air Conditioning">
+        <input type="number" id="area" placeholder="Area">
+        <input type="number" id="bathrooms" placeholder="Bathrooms">
+        <input type="number" id="bedrooms" placeholder="Bedrooms">
+        <input type="number" id="parking" placeholder="Parking">
+        <input type="number" id="stories" placeholder="Stories">
+        <div id="price">
+            <h2>$ ---</h2>
+        </div>
+         <button id="predict">Predict Price</button> <!-- Button added here -->
+    </div>
+</div>
+</body>
+</html>
